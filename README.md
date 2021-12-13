@@ -19,8 +19,9 @@ eps=1e-08,
 2. Change the optimizer and layers
 Keep other parameters unchanged, change optimizer from SGD to Adam and change the layers:
 from  
-
-to    
+42323442.png
+to
+53453535.PNG
 This makes the training speed faster, but the accuracy is not good, it drops to about 87%.
 And I also changed type of pool from the avg_pool to the max_pool, The results show that on this data set, avg_pool is better than max_pool. 
 3.  Change the optimizer from SGD to NAdam 
@@ -41,5 +42,5 @@ Keep other parameters unchanged, only change the optimizer from SGD to Adam, acc
 It may be due to the use of the SGD optimizer in the pre-training process, or Adam is not suitable for ResNet50.
 2. BiT 
 But the latest ResNet-based architecture, called BiT, is much better than ResNet50. I tried to train the code on colab and found that it can reach 97.8%.
- 
+ 654654645.PNG
 
